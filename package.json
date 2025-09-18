@@ -17,7 +17,7 @@
     "react-on-screen": "^2.1.1",
     "react-pageflip": "^2.0.3",
     "react-router-dom": "^6.2.1",
-    "react-scan": "^0.2.8",
+    "react-scan": "^0.4.3",
     "react-window": "^1.8.11",
     "sass": "^1.47.0",
     "web-vitals": "^2.1.3"
