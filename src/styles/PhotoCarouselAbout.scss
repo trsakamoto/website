@@ -3,7 +3,7 @@
 // Photo Carousel About section with dark background
 .photo-carousel-about {
   background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
-  padding: 80px 40px;
+  padding: 120px 40px 80px 40px;
   position: relative;
   overflow: hidden;
 
@@ -82,7 +82,7 @@
 // Responsive design
 @media screen and (max-width: 1200px) {
   .photo-carousel-about {
-    padding: 60px 30px;
+    padding: 100px 30px 60px 30px;
 
     h2 {
       font-size: 2.2rem;
@@ -97,7 +97,7 @@
 
 @media screen and (max-width: 900px) {
   .photo-carousel-about {
-    padding: 40px 20px;
+    padding: 80px 20px 40px 20px;
 
     h2 {
       font-size: 2rem;
@@ -116,7 +116,7 @@
 
 @media screen and (max-width: 600px) {
   .photo-carousel-about {
-    padding: 30px 15px;
+    padding: 60px 15px 30px 15px;
 
     h2 {
       font-size: 1.8rem;

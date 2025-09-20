@@ -1,6 +1,7 @@
 // src/components/aboutComponents/whoWeAreAbout.js
 
 import React from "react";
+import whoWeAreImage from "../../static/about-placeholders/who-we-are/who-we-are-image.png";
 import "../../styles/WhoWeAreAbout.scss";
 
 class WhoWeAreAbout extends React.Component {
@@ -16,7 +17,7 @@ class WhoWeAreAbout extends React.Component {
               </p>
             </div>
             <div className="image-placeholder-large">
-              <span>Photo Placeholder</span>
+              <img src={whoWeAreImage} alt="Who We Are" />
             </div>
           </div>
         </div>

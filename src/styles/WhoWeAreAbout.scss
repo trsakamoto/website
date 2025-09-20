@@ -64,27 +64,18 @@
   .image-placeholder-large {
     width: 100%;
     height: 400px;
-    background: #404040;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #888;
-    font-size: 1rem;
     position: relative;
     overflow: hidden;
 
-    &::before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 60px;
-      height: 60px;
-      border: 2px dashed #888;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
       border-radius: 8px;
-      background: rgba(255,255,255,0.05);
     }
   }
 }

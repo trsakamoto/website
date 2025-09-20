@@ -1,6 +1,11 @@
 // src/components/aboutComponents/artifactDescriptionAbout.js
 
 import React from "react";
+import artifactBackground from "../../static/about-placeholders/artifact-backgrounds/artifact-background.png";
+import polaroid1 from "../../static/about-placeholders/polaroids/polaroid-1.jpg";
+import polaroid2 from "../../static/about-placeholders/polaroids/polaroid-2.jpg";
+import polaroid3 from "../../static/about-placeholders/polaroids/polaroid-3.jpg";
+import polaroid4 from "../../static/about-placeholders/polaroids/polaroid-4.jpg";
 import "../../styles/ArtifactDescriptionAbout.scss";
 
 class ArtifactDescriptionAbout extends React.Component {
@@ -49,33 +54,31 @@ class ArtifactDescriptionAbout extends React.Component {
 
     return (
       <div className="artifact-description-about">
-        {/* Background Asset Placeholder - Replace with actual Figma exports */}
-        <div 
-          className="background-asset"
-          style={{
-            // Replace this with actual background image when Figma assets are ready
-            // backgroundImage: `url('../../static/artifact-bg/${content.backgroundImage}')`
-          }}
-        ></div>
+        {/* Background Asset */}
+        <div className="background-asset"></div>
 
         <div className="artifact-description-content">
           <div className="artifact-main-content">
             {/* Left Image Collage */}
             <div className="left-image-collage">
-              <div className="polaroid-image"></div>
-              <div className="polaroid-image"></div>
-              <div className="polaroid-image"></div>
+              <div className="polaroid-image">
+                <img src={polaroid1} alt="TREND Activity 1" />
+              </div>
+              <div className="polaroid-image">
+                <img src={polaroid2} alt="TREND Activity 2" />
+              </div>
+              <div className="polaroid-image">
+                <img src={polaroid3} alt="TREND Activity 3" />
+              </div>
             </div>
 
             {/* Center Content */}
-            <div className="center-content">
-              <h1 className="trend-title">
-                <span className="letter-t">T</span>
-                <span className="letter-r">R</span>
-                <span className="letter-e">E</span>
-                <span className="letter-n">N</span>
-                <span className="letter-d">D</span>
-              </h1>
+            <div 
+              className="center-content"
+              style={{
+                backgroundImage: `url(${artifactBackground})`
+              }}
+            >
               <h2 className="category-subtitle">{content.subtitle}</h2>
               <div className="description-box">
                 <p className="description-text">{content.description}</p>
@@ -84,7 +87,9 @@ class ArtifactDescriptionAbout extends React.Component {
 
             {/* Right Image */}
             <div className="right-image">
-              <div className="single-polaroid"></div>
+              <div className="single-polaroid">
+                <img src={polaroid4} alt="TREND Activity 4" />
+              </div>
             </div>
           </div>
         </div>

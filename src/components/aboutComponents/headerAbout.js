@@ -1,6 +1,7 @@
 // src/components/aboutComponents/headerAbout.js
 
 import React from "react";
+import headerCollage from "../../static/about-placeholders/header-collage/header-collage.png";
 import "../../styles/HeaderAbout.scss";
 
 class HeaderAbout extends React.Component {
@@ -9,7 +10,9 @@ class HeaderAbout extends React.Component {
       <div className="header-about">
         <div className="header-about-content">
           <div className="header-image-section">
-            <div className="image-collage"></div>
+            <div className="image-collage">
+              <img src={headerCollage} alt="TREND Magazine Collage" />
+            </div>
           </div>
           <div className="header-text-section">
             <h1 className="trend-word">TREND</h1>

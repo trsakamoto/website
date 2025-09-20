@@ -11,22 +11,22 @@ class Blogs extends React.Component {
 
         const blogs = [
             {
-              title: "Rico Nasty and La Gabi take on UCSD at Muirstock, 3/9/2024",
-              author: "By Merav Price",
+              title: "Corinne Bailey Rae’s ‘Black Rainbows’ Live at UC San Diego",
+              author: "Writing by Alexandra Citra | Photography by Keith Gong",
               image: img1, // Replace with the actual image path
-              url: "https://medium.com/@trenducsd/rico-nasty-and-la-gabi-take-on-ucsd-at-muirstock-2024-89c2f0788752"
+              url: "https://trendmagazine.substack.com/p/corinne-bailey-raes-black-rainbows"
             },
             {
-              title:"Horizon: Larry June and Thee Sacred Souls at Epstein Family Amphitheater, 2/16/2024 and 2/17/2024",
-              author: "By Yalini Thillaikumar",
+              title:"TRASHION: Fashion made from consumer waste",
+              author: "By: Lina Mauk, Jialin Han, Sophia Bokovikova, Sarai Malk, and Quinn Sellers",
               image: img2, // Replace with the actual image path
-              url: "https://medium.com/@trenducsd/horizon-larry-june-and-thee-sacred-souls-at-epstein-family-amphitheater-2-16-2024-b92aad68c69e"
+              url: "https://trendmagazine.substack.com/p/trashion-fashion-made-from-consumer"
             },
             {
-              title: "There Are Butterflies Among Us",
-              author: "By Gianina Fan",
+              title: "Muirstock: Javi Vera and Ravyn Lenae at Epstein Family Amphitheater",
+              author: "By: Sydney McDonald",
               image: img3, // Replace with the actual image path
-              url: "https://medium.com/@trenducsd/there-are-butterflies-among-us-12feaaadd3be"
+              url: "https://trendmagazine.substack.com/p/muirstock-javi-vera-and-ravyn-lenae"
             },
         ];
 

@@ -1,6 +1,7 @@
 // src/components/aboutComponents/whatWeDoAbout.js
 
 import React from "react";
+import whatWeDoImage from "../../static/about-placeholders/what-we-do/what-we-do-image.png";
 import "../../styles/WhoWeAreAbout.scss";
 
 class WhatWeDoAbout extends React.Component {
@@ -16,7 +17,7 @@ class WhatWeDoAbout extends React.Component {
               </p>
             </div>
             <div className="image-placeholder-medium">
-              <span>Photo Placeholder</span>
+              <img src={whatWeDoImage} alt="What We Do" />
             </div>
           </div>
         </div>

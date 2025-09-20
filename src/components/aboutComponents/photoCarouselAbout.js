@@ -46,7 +46,6 @@ class PhotoCarouselAbout extends React.Component {
 
     return (
       <div className="photo-carousel-about">
-        <h2>Photo Carousel</h2>
         {images.length > 0 ? (
           <div className="gallery-container">
             <AliceCarousel

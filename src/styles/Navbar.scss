@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   background-color: transparent;
-  z-index: 1;
+  z-index: 9999;
   transition: background-color 0.3s ease;
   // border-bottom: 2px solid $color-black;
 
@@ -99,7 +99,7 @@ a {
   top: 0;
   position: -webkit-sticky;
   position: sticky;
-
+  z-index: 9999;
 }
 
 .side-panel {
@@ -111,6 +111,7 @@ a {
   position: sticky;
   height: 100vh;
   top: 0;
+  z-index: 9998;
 }
 
 .bm-item {
