@@ -1,0 +1,244 @@
+@import "./Constants.scss";
+
+// Dark gray background container for about page sections
+.about-section-container {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+  min-height: 100vh;
+  padding: 80px 40px;
+  position: relative;
+  overflow: hidden;
+
+  // Subtle gradient overlay for visual depth
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at top right, rgba(255,255,255,0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom left, rgba(255,255,255,0.03) 0%, transparent 50%);
+    pointer-events: none;
+  }
+}
+
+// Main content wrapper
+.about-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+// WHO WE ARE section layout (text left, image right)
+.who-we-are-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 120px;
+  min-height: 500px;
+
+  .text-content {
+    padding-right: 40px;
+    
+    .section-title {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: white;
+      margin-bottom: 30px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .section-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: white;
+      max-width: 500px;
+      opacity: 0.95;
+    }
+  }
+
+  .image-placeholder-large {
+    width: 100%;
+    height: 400px;
+    background: #404040;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 60px;
+      height: 60px;
+      border: 2px dashed #888;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.05);
+    }
+  }
+}
+
+// WHAT WE DO section layout (text left, image right)
+.what-we-do-about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text image";
+  gap: 60px;
+  align-items: center;
+  min-height: 500px;
+
+  .text-content {
+    grid-area: text;
+    padding-right: 40px;
+    position: relative;
+    z-index: 2;
+    
+    .section-title {
+      font-size: 3.5rem;
+      font-weight: 800;
+      color: white !important;
+      margin-bottom: 30px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      text-transform: uppercase;
+    }
+
+    .section-description {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      color: white !important;
+      max-width: 500px;
+      opacity: 1;
+    }
+  }
+
+  .image-placeholder-medium {
+    grid-area: image;
+    width: 100%;
+    height: 350px;
+    background: #404040;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    font-size: 1rem;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50px;
+      height: 50px;
+      border: 2px dashed #888;
+      border-radius: 6px;
+      background: rgba(255,255,255,0.05);
+    }
+  }
+}
+
+// Responsive design
+@media screen and (max-width: 1200px) {
+  .about-section-container {
+    padding: 60px 30px;
+  }
+
+  .who-we-are-about,
+  .what-we-do-about {
+    gap: 40px;
+    margin-bottom: 80px;
+  }
+
+  .who-we-are-about .text-content {
+    padding: 0 20px;
+  }
+
+  .what-we-do-about .text-content {
+    padding: 0 20px;
+  }
+
+  .section-title {
+    font-size: 2.8rem !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about-section-container {
+    padding: 40px 20px;
+  }
+
+  .who-we-are-about {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "text";
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .what-we-do-about {
+    grid-template-columns: 1fr;
+    grid-template-areas: "image" "text";
+    gap: 40px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .who-we-are-about .text-content,
+  .what-we-do-about .text-content {
+    padding: 0;
+  }
+
+  .who-we-are-about .image-placeholder-large,
+  .what-we-do-about .image-placeholder-medium {
+    height: 300px;
+  }
+
+  .section-title {
+    font-size: 2.5rem !important;
+  }
+
+  .section-description {
+    font-size: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-section-container {
+    padding: 30px 15px;
+  }
+
+  .who-we-are-about,
+  .what-we-do-about {
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+
+  .who-we-are-about .image-placeholder-large,
+  .what-we-do-about .image-placeholder-medium {
+    height: 250px;
+  }
+
+  .section-title {
+    font-size: 2rem !important;
+    margin-bottom: 20px !important;
+  }
+
+  .section-description {
+    font-size: 0.95rem !important;
+  }
+}

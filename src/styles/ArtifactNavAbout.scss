@@ -1,0 +1,282 @@
+@import "./Constants.scss";
+
+// Artifact Navigation About section
+.artifact-nav-about {
+  min-height: 25vh;
+  padding: 40px 40px 5px 40px;
+  position: relative;
+}
+
+.artifact-nav-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+  height: 20vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+// SVG Navigation Container
+.svg-navigation {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+// Navigation Buttons
+.nav-button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+  
+  .button-circle {
+    width: 12px;
+    height: 12px;
+    background: #666;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .button-text {
+    color: #888;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  &:hover {
+    .button-circle {
+      transform: scale(1.3);
+      background: #999;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    }
+    
+    .button-text {
+      transform: scale(1.05);
+      color: #bbb;
+    }
+  }
+  
+  &.active {
+    .button-circle {
+      transform: scale(1.5);
+      background: white;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    }
+    
+    .button-text {
+      color: white;
+      transform: scale(1.1);
+    }
+  }
+}
+
+// Button Positions (horizontal layout)
+.fashion-shows {
+  top: 50%;
+  left: 12.5%;
+  transform: translate(-50%, -50%);
+}
+
+.magazines {
+  top: 50%;
+  left: 37.5%;
+  transform: translate(-50%, -50%);
+}
+
+.thrifty-thurs {
+  top: 50%;
+  left: 62.5%;
+  transform: translate(-50%, -50%);
+}
+
+.collabs {
+  top: 50%;
+  left: 87.5%;
+  transform: translate(-50%, -50%);
+}
+
+// SVG Lines - Single horizontal line
+.navigation-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+  
+  line {
+    stroke: #666;
+    stroke-width: 0.5;
+    stroke-linecap: round;
+  }
+  
+  line.active {
+    stroke: #666;
+    stroke-width: 0.8;
+  }
+}
+
+// Responsive design
+@media screen and (max-width: 1200px) {
+  .artifact-nav-about {
+    padding: 30px 30px 5px 30px;
+    min-height: 22vh;
+  }
+  
+  .artifact-nav-content {
+    height: 18vh;
+    align-items: flex-end;
+    padding-bottom: 10px;
+  }
+  
+  .nav-button {
+    .button-text {
+      font-size: 1.1rem;
+    }
+    
+    .button-circle {
+      background: #666;
+    }
+    
+    .button-text {
+      color: #888;
+    }
+  }
+  
+  .fashion-shows {
+    top: 50%;
+    left: 12.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .magazines {
+    top: 50%;
+    left: 37.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .thrifty-thurs {
+    top: 50%;
+    left: 62.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .collabs {
+    top: 50%;
+    left: 87.5%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .artifact-nav-about {
+    padding: 25px 20px 5px 20px;
+    min-height: 18vh;
+  }
+  
+  .artifact-nav-content {
+    height: 15vh;
+    align-items: flex-end;
+    padding-bottom: 8px;
+  }
+  
+  .nav-button {
+    .button-circle {
+      width: 10px;
+      height: 10px;
+      background: #666;
+    }
+    
+    .button-text {
+      font-size: 1rem;
+      color: #888;
+    }
+  }
+  
+  .fashion-shows {
+    top: 50%;
+    left: 12.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .magazines {
+    top: 50%;
+    left: 37.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .thrifty-thurs {
+    top: 50%;
+    left: 62.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .collabs {
+    top: 50%;
+    left: 87.5%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .artifact-nav-about {
+    padding: 20px 15px 5px 15px;
+    min-height: 15vh;
+  }
+  
+  .artifact-nav-content {
+    height: 12vh;
+    align-items: flex-end;
+    padding-bottom: 6px;
+  }
+  
+  .nav-button {
+    .button-circle {
+      width: 8px;
+      height: 8px;
+      background: #666;
+    }
+    
+    .button-text {
+      font-size: 0.9rem;
+      color: #888;
+    }
+  }
+  
+  .fashion-shows {
+    top: 50%;
+    left: 12.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .magazines {
+    top: 50%;
+    left: 37.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .thrifty-thurs {
+    top: 50%;
+    left: 62.5%;
+    transform: translate(-50%, -50%);
+  }
+
+  .collabs {
+    top: 50%;
+    left: 87.5%;
+    transform: translate(-50%, -50%);
+  }
+}

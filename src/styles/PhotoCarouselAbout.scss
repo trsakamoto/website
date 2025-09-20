@@ -1,0 +1,134 @@
+@import "./Constants.scss";
+
+// Photo Carousel About section with dark background
+.photo-carousel-about {
+  background: linear-gradient(135deg, #2a2a2a 0%, #1f1f1f 100%);
+  padding: 80px 40px;
+  position: relative;
+  overflow: hidden;
+
+  // Subtle gradient overlay for visual depth
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(ellipse at top right, rgba(255,255,255,0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at bottom left, rgba(255,255,255,0.03) 0%, transparent 50%);
+    pointer-events: none;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+    letter-spacing: -0.01em;
+  }
+}
+
+.gallery-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .alice-carousel {
+    .alice-carousel__wrapper {
+      .alice-carousel__stage {
+        .alice-carousel__stage-item {
+          .img-container {
+            padding: 0 10px;
+            
+            .film-strip-img {
+              width: 100%;
+              height: 300px;
+              object-fit: cover;
+              border-radius: 8px;
+              box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+              transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+              &:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Loading state styling
+.photo-carousel-about > div:last-child {
+  text-align: center;
+  color: #ccc;
+  font-size: 1rem;
+  position: relative;
+  z-index: 1;
+
+  p {
+    margin: 10px 0;
+    opacity: 0.8;
+  }
+}
+
+// Responsive design
+@media screen and (max-width: 1200px) {
+  .photo-carousel-about {
+    padding: 60px 30px;
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  .gallery-container .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item .img-container .film-strip-img {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .photo-carousel-about {
+    padding: 40px 20px;
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+  }
+
+  .gallery-container .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item .img-container {
+    padding: 0 5px;
+    
+    .film-strip-img {
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .photo-carousel-about {
+    padding: 30px 15px;
+
+    h2 {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+  }
+
+  .gallery-container .alice-carousel .alice-carousel__wrapper .alice-carousel__stage .alice-carousel__stage-item .img-container {
+    padding: 0 3px;
+    
+    .film-strip-img {
+      height: 180px;
+    }
+  }
+}

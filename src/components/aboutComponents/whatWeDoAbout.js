@@ -1,23 +1,23 @@
 // src/components/aboutComponents/whatWeDoAbout.js
 
 import React from "react";
-import "../../styles/WhoWeAre.scss";
-import AllStaffPic from "../../static/who-are-we-imgs/AllStaffPic.JPG";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import "../../styles/WhoWeAreAbout.scss";
 
 class WhatWeDoAbout extends React.Component {
   render() {
     return (
-      <div className="who-we-are-container">
-        <div className="content">
-          <div className="image-large">
-            <LazyLoadImage src={AllStaffPic} alt="What We Do" />
-          </div>
-          <div className="text-section">
-            <h2 className="title">What We Do</h2>
-            <p className="description">
-              Explore our projects, initiatives, and the impact we're making in our community.
-            </p>
+      <div className="about-section-container">
+        <div className="about-content">
+          <div className="what-we-do-about">
+            <div className="text-content">
+              <h2 className="section-title">WHAT WE DO</h2>
+              <p className="section-description">
+                Each academic year, we release two issues—Fall/Winter and Spring/Summer—and organize a fashion show that showcases innovative pieces and compelling narratives, amplifying diverse voices. Explore our issues, meet our team, and discover TREND.
+              </p>
+            </div>
+            <div className="image-placeholder-medium">
+              <span>Photo Placeholder</span>
+            </div>
           </div>
         </div>
       </div>

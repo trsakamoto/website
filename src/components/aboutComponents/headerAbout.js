@@ -1,20 +1,25 @@
 // src/components/aboutComponents/headerAbout.js
 
 import React from "react";
+import "../../styles/HeaderAbout.scss";
 
 class HeaderAbout extends React.Component {
   render() {
     return (
-      <div className="header-about" style={{
-        padding: "40px 20px",
-        textAlign: "center",
-        backgroundColor: "#f8f9fa",
-        borderBottom: "2px solid #e9ecef"
-      }}>
-        <h1 style={{ fontSize: "2.5rem", marginBottom: "20px", color: "#333" }}>About Us</h1>
-        <p style={{ fontSize: "1.2rem", color: "#666", maxWidth: "600px", margin: "0 auto" }}>
-          Learn more about our mission, vision, and the people behind our work.
-        </p>
+      <div className="header-about">
+        <div className="header-about-content">
+          <div className="header-image-section">
+            <div className="image-collage"></div>
+          </div>
+          <div className="header-text-section">
+            <h1 className="trend-word">TREND</h1>
+            <p className="trend-pronunciation">/trend/</p>
+            <span className="trend-grammar">noun</span>
+            <p className="trend-definition">
+              a student-run fashion and lifestyle magazine at UC San Diego
+            </p>
+          </div>
+        </div>
       </div>
     );
   }

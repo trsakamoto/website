@@ -7,6 +7,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import "../../styles/FilmStrip.scss";
 import "../../styles/FeaturedIssueGallery.scss";
+import "../../styles/PhotoCarouselAbout.scss";
 
 class PhotoCarouselAbout extends React.Component {
   render() {
@@ -44,12 +45,8 @@ class PhotoCarouselAbout extends React.Component {
     ));
 
     return (
-      <div className="photo-carousel-about" style={{
-        padding: "40px 20px",
-        backgroundColor: "#fff",
-        borderBottom: "1px solid #e9ecef"
-      }}>
-        <h2 style={{ fontSize: "2rem", marginBottom: "20px", color: "#333", textAlign: "center" }}>Photo Carousel</h2>
+      <div className="photo-carousel-about">
+        <h2>Photo Carousel</h2>
         {images.length > 0 ? (
           <div className="gallery-container">
             <AliceCarousel
@@ -64,7 +61,7 @@ class PhotoCarouselAbout extends React.Component {
             />
           </div>
         ) : (
-          <div style={{ textAlign: "center", color: "#666" }}>
+          <div>
             <p>Loading carousel images...</p>
             <p>Images found: {images.length}</p>
           </div>
