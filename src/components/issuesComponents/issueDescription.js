@@ -31,14 +31,20 @@ class IssueDescription extends React.Component {
           <Container >
             <Row>
               <Col md={8}>
-                <a href={this.props.link}>
-                  <h3 className="issue-title" >{this.props.title}</h3> 
-                </a>
+                <h3 className="issue-title">
+                  {this.props.title}
+                </h3>
                 <p>{this.props.description}</p>
               </Col>
               <Col md={4}>
                 <div className="issue-img-container" id="large-screen-container">
-                  <LazyLoadImage className="issue-img" src={this.props.picture} alt={this.props.title} />
+                  <LazyLoadImage 
+                    className="issue-img" 
+                    src={this.props.picture} 
+                    alt={this.props.title}
+                    onClick={this.props.onClick}
+                    style={{ cursor: 'pointer' }}
+                  />
                 </div>
               </Col>
             </Row>
@@ -47,14 +53,21 @@ class IssueDescription extends React.Component {
           <Container >
             <div className="small-screen-container">
               <Row className="small-screen-row" align="center">
-                  <a href={this.props.link}>
-                    <h3 className="issue-title" >{this.props.title}</h3> 
-                  </a>
+                  <h3 className="issue-title">
+                    {this.props.title}
+                  </h3>
                   <p>{this.props.description}</p>
               </Row>
               <Row align="center">
                   <div className="issue-img-container" id="small-screen-container">
-                    <LazyLoadImage className="issue-img" id="small-screen" src={this.props.picture} alt={this.props.title} />
+                    <LazyLoadImage 
+                      className="issue-img" 
+                      id="small-screen" 
+                      src={this.props.picture} 
+                      alt={this.props.title}
+                      onClick={this.props.onClick}
+                      style={{ cursor: 'pointer' }}
+                    />
                   </div>
               </Row>
             </div>

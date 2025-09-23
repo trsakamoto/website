@@ -9,9 +9,6 @@ class IssueBlock extends React.Component {
       <div className="issue-container" onClick={this.props.onClick}>
         <div className="issue-image-container">
           <LazyLoadImage className="issue-image" src={this.props.picture} alt={this.props.title} />
-          <div className="issue-description-layer">
-            <div className="issue-description"><p>{this.props.description}</p></div>
-          </div>
         </div>
       </div>
     )

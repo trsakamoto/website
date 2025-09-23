@@ -1,22 +1,27 @@
 export const issuesInfo = [
-  { // ADD LINK ATTRIBUTE BACK WHEN ISSUU IS LIVE
+  { 
+    picture: require("../../static/issues/fervor.jpg"),
+    title: "Fervor",
+    link: "https://issuu.com/trenducsd/docs/fervor", // Placeholder link - update when live
+    description: "In a culture shaped by immediacy, automation, and endless consumption, it is tempting to slip into apathy. It's easy to disengage, to let the world pass through us without anchoring to it. FERVOR is our refusal. It is our commitment to doing the difficult, messy, vibrant work of creating, connecting, and showing up.",
+  },
+  { 
     picture: require("../../static/issues/Diorama_Master.jpg"),
     title: "Diorama",
+    link: "https://issuu.com/trenducsd/docs/diorama", // Placeholder link - update when live
     description: "Last year, we released METAMORPHOSIS, delving into growth and revolution, and then OUT OF BOUNDS, where we celebrated what it means to be different and push boundaries. Throughout these explorations, we kept coming back to an idea: Movement and transformation are likely best leaning on the edge. They lie not in resolution but in process. With this issue, we explore DIORAMA—a realm of intersecting narratives and liminal spaces, those in-betweens that lie at the heart of our existence.",
   },
   {
     picture: require("../../static/issues/out-of-bounds.jpg"),
     title: "Out of Bounds",
     link: "https://issuu.com/trenducsd/docs/outofbounds",
-    description: "With “Out of Bounds,” we have reached our final potential: we know who we are, we aren’t afraid to speak out and disrupt the norm. Out of Bounds captures what it means to be different, to push the boundaries, and break out of them entirely. People who do so are often ostracized for their differences—and yet, they forge on anyway and revolutionize culture as we know it. Out of Bounds \
-    honors the artist's past and celebrates the independent spirit, particularly how it relates to our generation.",
+    description: "With \"Out of Bounds,\" we have reached our final potential: we know who we are, we aren't afraid to speak out and disrupt the norm. Out of Bounds captures what it means to be different, to push the boundaries, and break out of them entirely. People who do so are often ostracized for their differences—and yet, they forge on anyway and revolutionize culture as we know it. Out of Bounds honors the artist's past and celebrates the independent spirit, particularly how it relates to our generation.",
   },
   {
     picture: require("../../static/issues/metamorphosis.jpg"),
     title: "METAMORPHOSIS",
     link: "https://issuu.com/trenducsd/docs/trend_fw23-24_1_",
-    description: "The world changes, and us with it. We are growing every day, our wings strengthening. We become bigger, better versions of who we were yesterday. Metamorphosis is the very essence of worldly context at this very point in time, and us in it. Metamorphosis is our celebration of the past, present, and future. Metamorphosis is a declaration that you can be anything, anyone you want to be. \
-    In this issue, we looked towards nature, to find our strength in the sea and the land. We looked inward at our own change. We looked outward and observed the changes all around us, in fashion, media, and popular culture, even in the faces of generations past. We celebrate Palestine and we celebrate queer identity. We grapple with the aches and pains of growing up. And we marvel at what is to come.",
+    description: "The world changes, and us with it. We are growing every day, our wings strengthening. We become bigger, better versions of who we were yesterday. Metamorphosis is the very essence of worldly context at this very point in time, and us in it. Metamorphosis is our celebration of the past, present, and future. Metamorphosis is a declaration that you can be anything, anyone you want to be. In this issue, we looked towards nature, to find our strength in the sea and the land. We looked inward at our own change. We looked outward and observed the changes all around us, in fashion, media, and popular culture, even in the faces of generations past. We celebrate Palestine and we celebrate queer identity. We grapple with the aches and pains of growing up. And we marvel at what is to come.",
   },
   {
     picture: require("../../static/issues/vault.jpg"),
@@ -28,13 +33,13 @@ export const issuesInfo = [
     picture: require("../../static/issues/tide.jpg"),
     title: "Tide",
     link: "https://issuu.com/trenducsd/docs/tide_issue",
-    description: "Like the alternating rise and fall of the tide itself, the definition of “tide” constantly shifts. We explored how “tide” has showcased itself in the past and present, be it through representation in period cinema or inclusivity in surf culture. Above all, we hope that you, our reader, can see and understand our vision of “tide” as synonymous with “seasons of change”.",
+    description: "Like the alternating rise and fall of the tide itself, the definition of \"tide\" constantly shifts. We explored how \"tide\" has showcased itself in the past and present, be it through representation in period cinema or inclusivity in surf culture. Above all, we hope that you, our reader, can see and understand our vision of \"tide\" as synonymous with \"seasons of change\".",
   },
   {
     picture: require("../../static/issues/revival.jpg"),
     title: "Revival",
     link: "https://issuu.com/trenducsd/docs/revival_issue_fw22",
-    description: "Like the alternating rise and fall of the tide itself, the definition of the word “tide” constantly shifts. In this issue, we explored how “tide” has showcased itself in the past and present, be it through representation in period cinema or inclusivity in surf culture. Above all, we hope that you, our reader, can see and understand our vision of “tide” as “seasons of change”.",
+    description: "Like the alternating rise and fall of the tide itself, the definition of the word \"tide\" constantly shifts. In this issue, we explored how \"tide\" has showcased itself in the past and present, be it through representation in period cinema or inclusivity in surf culture. Above all, we hope that you, our reader, can see and understand our vision of \"tide\" as \"seasons of change\".",
   },
   {
     picture: require("../../static/issues/unveiled.jpg"),

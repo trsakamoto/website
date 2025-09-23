@@ -21,7 +21,13 @@ class Issues extends React.Component {
     return (
       <div className="issues-page">
         <FeaturedIssueGallery/>
-        <IssueDescription picture={issuesInfo[0].picture} title={issuesInfo[0].title} link={issuesInfo[0].link} description={issuesInfo[0].description}/>
+        <IssueDescription 
+          picture={issuesInfo[0].picture} 
+          title={issuesInfo[0].title} 
+          link={issuesInfo[0].link} 
+          description={issuesInfo[0].description}
+          onClick={() => this.setState({ selectedIssue: issuesInfo[0] })}
+        />
         <Container className="issues-grid-container" >
           <div className="issues">
           <Row justify="center" >
@@ -44,7 +50,9 @@ class Issues extends React.Component {
           </Row>
           </div>
         </Container>
-        <IssueModal issue={this.state.selectedIssue} onClose={() => this.setState({ selectedIssue: null })} />
+        {this.state.selectedIssue && (
+          <IssueModal issue={this.state.selectedIssue} onClose={() => this.setState({ selectedIssue: null })} />
+        )}
       </div>
       
     )

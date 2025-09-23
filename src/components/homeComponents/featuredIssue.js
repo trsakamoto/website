@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-grid-system";
 import '../../styles/FeaturedIssue.scss';
 import FeaturedIssueGallery from "../issuesComponents/featuredIssueGallery";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import cover from "../../static/issues/Diorama_Master.jpg";
+import cover from "../../static/issues/fervor.jpg";
 
 
 
@@ -57,10 +57,10 @@ class FeaturedIssue extends React.Component {
           {windowWidth > 800 ? (
             <Row align="flex-end" justify="end">
               <p className="featured-issue-description">
-                      REALM OF INTERSECTING NARRATIVES AND LIMINAL SPACES <br />
-                      DIORAMA <br />
-                      FALL / WINTER ISSUE <br />
-                      VOL. 26
+                      A SPACE LIT BY EMOTION, ACTION, AND DEVOTION <br />
+                      FERVOR <br />
+                      SPRING / SUMMER ISSUE <br />
+                      VOL. 27
                     </p>
               <Col md={5}>
                   <div className="featured-issues-img-container">

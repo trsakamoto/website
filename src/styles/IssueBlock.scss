@@ -2,6 +2,7 @@
 
 .issue-container {
   margin-bottom: $spacer-3;
+  cursor: pointer;
 }
 
 .issue-image-container {
@@ -10,34 +11,13 @@
   position: relative;
 }
 
-.issue-description-layer {
-  position: absolute;
-  padding-left: $spacer-2;
-  padding-right: $spacer-2;
-  opacity: 0;
-  display:inline-block;
-
-  /* transition effect. not necessary */
-  transition: opacity .2s, visibility .2
-}
-
-.issue-container:hover .issue-image{
-  opacity: 25%;
-}
-
-.issue-container:hover .issue-description-layer {
-  visibility: visible;
-  opacity: 1;
-}
-
 .issue-image {
   width: 70%;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease-in-out;
+  cursor: pointer;
+  
+  &:hover {
+    box-shadow: 0px 0px 15px rgba(249, 248, 248, 0.3);
+  }
 }
-
-.issue-description {
-  padding: $spacer-1;
-  position: relative;
-  overflow:auto;
-  height: 25rem;
-}
-
