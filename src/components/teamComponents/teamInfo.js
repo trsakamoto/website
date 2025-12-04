@@ -55,17 +55,17 @@ export const teamInfo = [
     position: "Photographer"
   },
   {
-    picture: () => import("../../static/team/Vanessa_Mak.JPG"),
+    picture: () => import("../../static/team/Althea_Allen.JPG"),
     name: "Althea Allen",
     position: "Photographer"
   },
   {
-    picture: () => import("../../static/team/Vanessa_Mak.JPG"),
+    picture: () => import("../../static/team/Tabitha_Finamore.JPG"),
     name: "Tabitha Finamore",
     position: "Photographer"
   },
   {
-    picture: () => import("../../static/team/Vanessa_Mak.JPG"),
+    picture: () => import("../../static/team/Sean_Desmond_Jones.JPG"),
     name: "Sean Jones",
     position: "Photographer"
   },
